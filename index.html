@@ -12,10 +12,6 @@
       /* Make the container-fluid div take full viewport height */
       .full-height {
         min-height: 100vh;
-        /* background-image: url('Assets/background.png'); 
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat; */
       }
       .iframe-container {
         position: relative;
@@ -40,33 +36,37 @@
   </head>
   <body>
     <!-- Outer div with full height -->
-    <div class="container-fluid p-3 full-height d-flex align-items-center justify-content-center">
+    <!-- <div class="position-fixed w-100 h-100" style="background-image: url('Assets/ProjectBG1.png'); background-size: cover; background-position: center; background-repeat: no-repeat; filter: blur(2px); -webkit-filter: blur(2px); top: 0; left: 0; z-index: -1;"></div> -->
+    <!-- <div class="position-fixed w-100 h-100" style="background-image: url('Assets/ProjectBG.png'); background-size: cover; background-position: center; background-repeat: no-repeat; filter: blur(2px); -webkit-filter: blur(2px); top: 0; left: 0; z-index: -1;"></div> -->
+    <div class="container-fluid p-3 full-height d-flex align-items-center justify-content-center" style="z-index: 2;">
       <!-- Profile Information -->
-      <div class="row border rounded p-2 w-100">
+      <div class="row  p-2 w-100" style="background-color: rgba(255, 255, 255, 0.0);">
         <!-- Profile Card -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card p-3">
+        <div class="col-lg-4 col-md-6" style="background-color: rgba(255, 255, 255, 0.0);">
+          <div class=" p-3">
             <div class="text-center">
-              <img src="Assets/profile.png" alt="Card image cap" class="img-fluid" style="width: 75%;">
+              <img src="Assets/profile1.png" alt="Card image cap" class="img-fluid" style="width: 75%;">
             </div>
             <div class="card-body text-center">
               <h5 class="card-title">Battu Sudeep</h5>
               <p class="card-text" style="text-align: left;">
                 I'm Battu Sudeep, a full-stack .NET developer at Infosys with expertise in web development and data engineering. Skilled across front-end, back-end, and databases.
               </p>
-              <button class="btn">Resume</button>
-              <button class="btn"> <a href="https://github.com/Sudeepvicky" style="color: black;" target="_blank"><i class="fa-brands fa-github"></i></a> </button>
-              <button class="btn"> <a href="mailto:battusudeep33@gmail.com" style="color: black;" target="_blank"><i class="fa-regular fa-envelope"></i></a> </button>
-              <button class="btn"> <a href="https://www.linkedin.com/in/battu-sudeep/" style="color: black;" target="_blank"><i class="fa-brands fa-linkedin"></i></a> </button>
-              <a href="#" class="btn btn-primary w-100 mt-3">Want to connect!</a>
+              <button class="btn"><i class="fa-regular fa-file"></i> &nbsp;Resume</button>
+              <button class="btn"> <a href="https://github.com/Sudeepvicky" style="color: black;" target="_blank"><i class="fa-brands fa-github" style="color: black;"></i></a> </button>
+              <button class="btn"> <a href="mailto:battusudeep33@gmail.com" style="color: black;" target="_blank"><i class="fa-regular fa-envelope" style="color: red;"></i></a> </button>
+              <button class="btn"> <a href="https://www.linkedin.com/in/battu-sudeep/" style="color: black;" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077B5;"></i></a> </button>
+              <a href="#" class="btn btn-info w-100 mt-3">Want to connect!</a>
             </div>
           </div>
         </div>
 
+
         <!-- Replaced Navbar with Div -->
         <div class="col-lg-8 col-md-6">
-          <div class="bg-light rounded p-3">
-            <ul class="list-unstyled d-flex justify-content-around mb-0"> 
+          
+          <div class="p-3">
+            <ul class="list-unstyled d-flex justify-content-around mb-0" > 
               <li><a href="#" class="text-dark" onclick="loadPage('projects.html')">Projects</a></li>
               <li><a href="#" class="text-dark" onclick="loadPage('experience.html')">Experience</a></li>
               <li><a href="#" class="text-dark" onclick="loadPage('education.html')">Education</a></li>
